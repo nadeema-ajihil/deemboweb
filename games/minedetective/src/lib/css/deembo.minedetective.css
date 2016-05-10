@@ -1,0 +1,226 @@
+body {
+    font-family: sans-serif;
+}
+
+header.entry-header {
+    display: none;
+}
+
+div.minedetective {
+    margin: 20px;
+    display: inline-block;
+    border: 2px solid #196666;
+}
+
+div.minedetective .header{
+    height: 35px;
+    border: 1px solid #196666;
+    background-color: #196666;
+    color: white;
+    text-align: right;
+}
+
+
+div.minedetective .header a{
+    color: white;
+}
+
+
+div.minedetective .header ul{
+    margin: 5px;
+}
+
+div.minedetective .header li{
+    display: inline;
+    padding-right: 10px;
+}
+
+div.minedetective .footer{
+    height: 35px;
+    border: 1px solid #196666;
+    background-color: #196666;
+    color: white;
+}
+
+div.minedetective .footer .mine-count{
+    width: 20%;
+    text-align: left;
+    float: left;
+    padding: 5px 0px 0px 10px;
+}
+
+div.minedetective .footer span.count{
+    font-size: 12px;
+}
+
+div.minedetective .footer .timer{
+    width: 20%;
+    text-align: right;
+    float: right;
+    height: inherit;
+    font-size: 20px;
+    padding: 3px 10px 0px 0px;
+}
+
+div.minedetective .row{
+    padding: 0px;
+    display: table-row;
+}
+
+div.minedetective .cell{
+    font-family: sans-serif;
+    font-size: 12px;
+    width: 25px;
+    padding-top: 3px;
+    height: 22px;
+    float: left;
+    display: table-cell;
+    text-align: center;
+    background: #d6f5f5;
+    border-right: 1px solid #248f8f;
+    border-bottom: 1px solid #248f8f;
+    border-left: 1px solid #ebfafa;
+    border-top: 1px solid #ebfafa;
+}
+
+div.minedetective .clicked{
+    background: #c2f0f0;
+    border-right: 1px solid #d6f5f5;
+    border-bottom: 1px solid #d6f5f5;
+    border-left: 1px solid #248f8f;
+    border-top: 1px solid #248f8f;
+}
+
+div.minedetective .one {
+    color: blue;
+}
+
+div.minedetective .two {
+    color: green;
+}
+
+div.minedetective .three {
+    color: blueviolet;
+}
+
+div.minedetective .four {
+    color: olive;
+}
+
+div.minedetective .five {
+    color: red;
+}
+
+div.minedetective .six {
+    color: brown;
+}
+
+div.minedetective .seven {
+    color: orangered;
+}
+
+div.minedetective .eight {
+    color: darkblue;
+}
+
+div.minedetective .explode {
+    background-image: url(../img/explode.png);
+    background-size:  18px 18px; 
+    background-repeat:   no-repeat;
+    background-position: center center;     
+}
+
+div.minedetective .marked {
+    background-image: url(../img/bomb.png);
+    background-size: 18px 18px;                      
+    background-repeat:   no-repeat;
+    background-position: center center;     
+}
+
+.centered {
+    width: 100%;
+    display: table;
+    text-align: center;
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #d6f5f5;
+  border-radius: 5px;
+  width: 20%;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+.popup h2 {
+    margin: 0px;
+    color: #196666;
+    font-size: 20px;
+    text-align: left;
+}
+
+.popup .close {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 50px;
+    transition: all 200ms;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #d6f5f5;
+    padding: 2px;
+    background: #196666;
+    text-align: center;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+    text-align: left;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
